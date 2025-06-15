@@ -32,25 +32,23 @@ st.set_page_config(
 
 
 def get_st_button_a_tag(url_link, button_name):
-    """
-    generate html a tag
-    :param url_link:
-    :param button_name:
-    :return:
-    """
     return f'''
-    <a href={url_link}><button style="
-    fontWeight: 400;
-    padding: 0.25rem 0.75rem;
-    borderRadius: 0.25rem;
-    lineHeight: 1.6;
-    width: auto;
-    text-align: center; 
-    margin: auto;
-    userSelect: none;
-    backgroundColor: #FFFFFF;
-    border: 1px solid rgba(49, 51, 63, 0.2);">{button_name}</button></a>
+        <a href="{url_link}" target="_blank" style="
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 4px 2px;
+            background-color: #f63366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        ">{button_name}</a>
     '''
+
 
 
 def extract_app_id(url):
